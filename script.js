@@ -22,9 +22,17 @@ $('form').keyup(function () {
     $('span[id="job"]').text(jobVar);
 }).keyup();
 
-$('#templateName').change(function () {
+$(function() {
+	$('select').change(function() {
+    $('.card-body p').hide();
+    console.log($(this).val());
+  	$('p.t-' + $(this).val()).show();
+  });
+});
+
+$('#templateChoice').change(function () {
     var value = $(this).find(' :selected').text();
-    $(".template").text(value);
+    $(".template-name").text(value);
 }).change();
 
 $('#signatureName').click(function() {

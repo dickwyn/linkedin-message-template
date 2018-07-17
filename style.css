@@ -34,3 +34,12 @@ main .message {
 .message span {
     font-weight: 500;
 }
+
+.two,
+.tre {
+    display: none;
+}
+
+.wrap p.t-1 {
+    color: red;
+}

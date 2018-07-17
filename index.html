@@ -23,11 +23,16 @@
 <body>
     <!-- Begin page content -->
     <main role="main" class="container">
-        <h1 class="mt-5 template"></h1>
+        <h1 class="mt-5 template-name"></h1>
         <div class="message" onfocus="this.select();">
             <div class="card">
                 <div class="card-body">
-                    <p class="lead" id="copyMessage">
+                    <p class="lead t-1" id="copyMessage">
+                        Hi <span id="name"></span>,
+                        <br/><br/>I came across your profile through the alumni search. I will be graduating ASU this December with a CS degree. I'm looking to apply for <span id="job"></span> within <span id="company"></span>. I would like to have a chat with you to get some pointers when applying for a role at <span id="company"></span>.<span id="signature"></span>
+                        <span id="txtAge"><br/><br/>Go Devils!</span>
+                    </p>
+                    <p class="lead t-2" id="copyMessage2">
                         Hi <span id="name"></span>,
                         <br/><br/>I came across your profile through the alumni search. I will be graduating ASU this December with a CS degree. I'm looking to apply for <span id="job"></span> within <span id="company"></span>. I would like to have a chat with you to get some pointers when applying for a role at <span id="company"></span>.<span id="signature"></span>
                         <span id="txtAge"><br/><br/>Go Devils!</span>
@@ -35,14 +40,20 @@
                 </div>
             </div>
         </div> 
+        <div class="wrap">
+            <p class="t-1">Text 1</p>
+            <p class="t-2">Text 2</p>
+            <p class="t-3">Text 3</p>
+        </div>
+        
         <form>
-            <div class="form-group row">
-                <label for="templateName" class="col-sm-2 col-form-label">Template</label>
-                <div class="col-sm-10" id="templateName">
+            <div class="form-group row template-selection">
+                <label for="templateChoice" class="col-sm-2 col-form-label">Template</label>
+                <div class="col-sm-10" id="templateChoice">
                     <select class="form-control">
-                        <option>Default Template</option>
-                        <option>Template #1</option>
-                        <option>Templete #2</option>
+                        <option value="1">Default Template</option>
+                        <option value="2">Template #1</option>
+                        <option value="3">Templete #2</option>
                     </select>
                 </div>
             </div>
@@ -76,7 +87,7 @@
                 </div>
             </div>
         </form>
-        <button type="button" class="btn btn-outline-primary btn-block" data-clipboard-target="#copyMessage">Copy Text</button>
+        <button type="button" class="btn btn-outline-primary btn-block" data-clipboard-target="#copyMessage2">Copy Text</button>
     </main>
     <footer class="footer">
         <div class="container">
