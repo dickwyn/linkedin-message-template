@@ -1,0 +1,6 @@
+@import './variables.scss';
+
+.content {
+  grid-area: content;
+  background-color: $secondary-text;
+}
