@@ -4,9 +4,9 @@ import '../../styles/template.scss';
 class Template extends Component {
   render() {
     return (
-      <div class="content">
-        <h1 class="mt-5 template" />
-        <div class="message" onfocus="this.select();">
+      <div class="template">
+        <div className="title">Default template</div>
+        <div class="message">
           <div class="card">
             <div class="card-body">
               <p class="lead" id="copyMessage">
@@ -27,8 +27,8 @@ class Template extends Component {
             </div>
           </div>
         </div>
-        <form>
-          <div class="form-group row">
+        <div className="inputs">
+          <div className="select">
             <label for="templateName" class="col-sm-2 col-form-label">
               Template
             </label>
@@ -40,7 +40,7 @@ class Template extends Component {
               </select>
             </div>
           </div>
-          <div class="form-group row">
+          <div className="name">
             <label for="personName" class="col-sm-2 col-form-label">
               Name
             </label>
@@ -53,7 +53,7 @@ class Template extends Component {
               />
             </div>
           </div>
-          <div class="form-group row">
+          <div className="company">
             <label for="companyName" class="col-sm-2 col-form-label">
               Company
             </label>
@@ -66,7 +66,7 @@ class Template extends Component {
               />
             </div>
           </div>
-          <div class="form-group row">
+          <div className="job">
             <label for="jobName" class="col-sm-2 col-form-label">
               Job
             </label>
@@ -79,7 +79,7 @@ class Template extends Component {
               />
             </div>
           </div>
-          <div class="form-group row">
+          <div className="signature">
             <label for="jobName" class="col-sm-2 col-form-label" />
             <div class="col-sm-10">
               <div class="form-check">
@@ -95,14 +95,14 @@ class Template extends Component {
               </div>
             </div>
           </div>
-        </form>
-        <button
-          type="button"
-          class="btn btn-outline-primary btn-block"
-          data-clipboard-target="#copyMessage"
-        >
-          Copy Text
-        </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary btn-block"
+            data-clipboard-target="#copyMessage"
+          >
+            Copy Text
+          </button>
+        </div>
       </div>
     );
   }

@@ -1,6 +1,26 @@
 @import './variables.scss';
 
-.content {
+.template {
+  display: grid;
   grid-area: content;
   background-color: $secondary-text;
+  grid-template-areas:
+    'title'
+    'message'
+    'inputs';
+
+  .title {
+    grid-area: title;
+    background-color: yellow;
+  }
+
+  .message {
+    grid-area: message;
+    background-color: blue;
+  }
+
+  .inputs {
+    grid-area: inputs;
+    background-color: green;
+  }
 }
