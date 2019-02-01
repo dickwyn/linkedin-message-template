@@ -1,34 +1,26 @@
 @import './variables.scss';
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: $primary-color;
+.container {
+  display: grid;
+  grid-template-rows: 35px auto 30px;
+  grid-template-areas:
+    'header'
+    'content'
+    'footer';
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  grid-area: header;
+  background-color: $primary-color;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  grid-area: content;
+  background-color: $secondary-text;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $dark-primary-color;
 }

@@ -3,115 +3,119 @@ import './styles/App.scss';
 
 class App extends Component {
   render() {
+    const year = new Date().getFullYear();
+
     return (
       <div>
-        <main role="main" class="container">
-          <h1 class="mt-5 template" />
-          <div class="message" onfocus="this.select();">
-            <div class="card">
-              <div class="card-body">
-                <p class="lead" id="copyMessage">
-                  Hi <span id="name" />,
-                  <br />
-                  <br />I came across your profile through the alumni search. I
-                  will be graduating ASU this December with a CS degree. I'm
-                  looking to apply for <span id="job" /> within{' '}
-                  <span id="company" />. I would like to have a chat with you to
-                  get some pointers when applying for a role at{' '}
-                  <span id="company" />.<span id="signature" />
-                  <span id="txtAge">
-                    <br />
-                    <br />
-                    Go Devils!
-                  </span>
-                </p>
-              </div>
-            </div>
+        <div className="container">
+          <div className="header">
+            <div className="left">www.dickwyn.xyz</div>
+            <div className="right">right</div>
           </div>
-          <form>
-            <div class="form-group row">
-              <label for="templateName" class="col-sm-2 col-form-label">
-                Template
-              </label>
-              <div class="col-sm-10" id="templateName">
-                <select class="form-control">
-                  <option>Default Template</option>
-                  <option>Template #1</option>
-                  <option>Templete #2</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="personName" class="col-sm-2 col-form-label">
-                Name
-              </label>
-              <div class="col-sm-10">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="personName"
-                  placeholder="John"
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="companyName" class="col-sm-2 col-form-label">
-                Company
-              </label>
-              <div class="col-sm-10">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="companyName"
-                  placeholder="Google"
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="jobName" class="col-sm-2 col-form-label">
-                Job
-              </label>
-              <div class="col-sm-10">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="jobName"
-                  placeholder="Full Stack developer roles"
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="jobName" class="col-sm-2 col-form-label" />
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="signatureName"
-                    checked
-                  />
-                  <label class="form-check-label" for="defaultCheck1">
-                    Signature
-                  </label>
+          <div class="content">
+            <h1 class="mt-5 template" />
+            <div class="message" onfocus="this.select();">
+              <div class="card">
+                <div class="card-body">
+                  <p class="lead" id="copyMessage">
+                    Hi <span id="name" />,
+                    <br />
+                    <br />I came across your profile through the alumni search.
+                    I will be graduating ASU this December with a CS degree. I'm
+                    looking to apply for <span id="job" /> within{' '}
+                    <span id="company" />. I would like to have a chat with you
+                    to get some pointers when applying for a role at{' '}
+                    <span id="company" />.<span id="signature" />
+                    <span id="txtAge">
+                      <br />
+                      <br />
+                      Go Devils!
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
-          </form>
-          <button
-            type="button"
-            class="btn btn-outline-primary btn-block"
-            data-clipboard-target="#copyMessage"
-          >
-            Copy Text
-          </button>
-        </main>
-        <footer class="footer">
-          <div class="container">
-            <span class="text-muted">
-              {new Date().getFullYear()} testorange - message template v0.2
-            </span>
+            <form>
+              <div class="form-group row">
+                <label for="templateName" class="col-sm-2 col-form-label">
+                  Template
+                </label>
+                <div class="col-sm-10" id="templateName">
+                  <select class="form-control">
+                    <option>Default Template</option>
+                    <option>Template #1</option>
+                    <option>Templete #2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="personName" class="col-sm-2 col-form-label">
+                  Name
+                </label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="personName"
+                    placeholder="John"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="companyName" class="col-sm-2 col-form-label">
+                  Company
+                </label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="companyName"
+                    placeholder="Google"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="jobName" class="col-sm-2 col-form-label">
+                  Job
+                </label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="jobName"
+                    placeholder="Full Stack developer roles"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="jobName" class="col-sm-2 col-form-label" />
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="signatureName"
+                      checked
+                    />
+                    <label class="form-check-label" for="defaultCheck1">
+                      Signature
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-block"
+              data-clipboard-target="#copyMessage"
+            >
+              Copy Text
+            </button>
           </div>
-        </footer>
+          <div className="footer">
+            © {year} testorange - message template v0.2
+          </div>
+        </div>
       </div>
     );
   }
