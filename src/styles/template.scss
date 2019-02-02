@@ -4,23 +4,30 @@
   display: grid;
   grid-area: content;
   background-color: $secondary-text;
+  grid-template-columns: auto 650px auto;
+  grid-template-rows: 100px auto auto;
   grid-template-areas:
-    'title'
-    'message'
-    'inputs';
+    '. title .'
+    '. message .'
+    '. form .';
 
   .title {
     grid-area: title;
+    margin: 1em 0em 0em;
     background-color: yellow;
   }
 
   .message {
     grid-area: message;
-    background-color: blue;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    border: 2px solid $divider-color;
+    // background-color: blue;
   }
 
-  .inputs {
-    grid-area: inputs;
+  .form {
+    grid-area: form;
     background-color: green;
   }
 }
