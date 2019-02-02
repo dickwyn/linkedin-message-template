@@ -4,12 +4,12 @@ import '../../styles/template.scss';
 class Template extends Component {
   render() {
     return (
-      <div class="template">
+      <div className="template">
         <div className="title">Default template</div>
-        <div class="message">
-          <div class="card">
-            <div class="card-body">
-              <p class="lead" id="copyMessage">
+        <div className="message">
+          <div className="card">
+            <div className="card-body">
+              <p className="lead" id="copyMessage">
                 Hi <span id="name" />,
                 <br />
                 <br />I came across your profile through the alumni search. I
@@ -29,11 +29,11 @@ class Template extends Component {
         </div>
         <div className="inputs">
           <div className="select">
-            <label for="templateName" class="col-sm-2 col-form-label">
+            <label htmlFor="templateName" className="col-sm-2 col-form-label">
               Template
             </label>
-            <div class="col-sm-10" id="templateName">
-              <select class="form-control">
+            <div className="col-sm-10" id="templateName">
+              <select className="form-control">
                 <option>Default Template</option>
                 <option>Template #1</option>
                 <option>Templete #2</option>
@@ -41,55 +41,55 @@ class Template extends Component {
             </div>
           </div>
           <div className="name">
-            <label for="personName" class="col-sm-2 col-form-label">
+            <label htmlFor="personName" className="col-sm-2 col-form-label">
               Name
             </label>
-            <div class="col-sm-10">
+            <div className="col-sm-10">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="personName"
                 placeholder="John"
               />
             </div>
           </div>
           <div className="company">
-            <label for="companyName" class="col-sm-2 col-form-label">
+            <label htmlFor="companyName" className="col-sm-2 col-form-label">
               Company
             </label>
-            <div class="col-sm-10">
+            <div className="col-sm-10">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="companyName"
                 placeholder="Google"
               />
             </div>
           </div>
           <div className="job">
-            <label for="jobName" class="col-sm-2 col-form-label">
+            <label htmlFor="jobName" className="col-sm-2 col-form-label">
               Job
             </label>
-            <div class="col-sm-10">
+            <div className="col-sm-10">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="jobName"
                 placeholder="Full Stack developer roles"
               />
             </div>
           </div>
           <div className="signature">
-            <label for="jobName" class="col-sm-2 col-form-label" />
-            <div class="col-sm-10">
-              <div class="form-check">
+            <label htmlFor="jobName" className="col-sm-2 col-form-label" />
+            <div className="col-sm-10">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="checkbox"
                   id="signatureName"
                   checked
                 />
-                <label class="form-check-label" for="defaultCheck1">
+                <label className="form-check-label" htmlFor="defaultCheck1">
                   Signature
                 </label>
               </div>
@@ -97,7 +97,7 @@ class Template extends Component {
           </div>
           <button
             type="button"
-            class="btn btn-outline-primary btn-block"
+            className="btn btn-outline-primary btn-block"
             data-clipboard-target="#copyMessage"
           >
             Copy Text
