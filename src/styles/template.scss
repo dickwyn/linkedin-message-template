@@ -1,53 +1,53 @@
-@import './variables.scss';
+// @import './variables.scss';
 
-.template {
-  grid-area: content;
-  display: grid;
-  background-color: $secondary-text;
-  grid-template-columns: auto 650px auto;
-  grid-template-rows: 100px auto auto;
-  grid-template-areas:
-    '. title .'
-    '. message .'
-    '. form .';
-  grid-row-gap: 25px;
+// .template {
+//   grid-area: content;
+//   // display: grid;
+//   background-color: $secondary-text;
+//   grid-template-columns: auto 650px auto;
+//   grid-template-rows: 100px auto auto;
+//   grid-template-areas:
+//     '. title .'
+//     '. message .'
+//     '. form .';
+//   grid-row-gap: 25px;
 
-  .title {
-    grid-area: title;
-    margin: 1em 0em 0em;
-    background-color: yellow;
-  }
+//   .title {
+//     grid-area: title;
+//     margin: 1em 0em 0em;
+//     background-color: yellow;
+//   }
 
-  .message {
-    grid-area: message;
-    font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1.5em;
-    border: 2px solid $divider-color;
-    background-color: blue;
-    align-self: start;
-  }
+//   .message {
+//     grid-area: message;
+//     font-weight: 300;
+//     font-size: 1.25em;
+//     line-height: 1.5em;
+//     border: 2px solid $divider-color;
+//     background-color: transparent;
+//     align-self: start;
+//   }
 
-  .form {
-    grid-area: form;
-    display: grid;
-    font-size: 1.15em;
-    background-color: green;
-    grid-template-columns: 120px auto;
-    grid-row-gap: 15px;
-    align-self: start;
+//   .form {
+//     grid-area: form;
+//     display: grid;
+//     font-size: 1.15em;
+//     background-color: green;
+//     grid-template-columns: 120px auto;
+//     grid-row-gap: 15px;
+//     align-self: start;
 
-    select.form-control,
-    .form-control {
-      border-radius: 5px;
-      border: 1px solid $divider-color;
-      font-size: 1.15em;
-      width: -webkit-fill-available;
-      height: 25px;
-    }
+//     select.form-control,
+//     .form-control {
+//       border-radius: 5px;
+//       border: 1px solid $divider-color;
+//       font-size: 1.15em;
+//       width: -webkit-fill-available;
+//       height: 25px;
+//     }
 
-    select.form-control {
-      height: inherit;
-    }
-  }
-}
+//     select.form-control {
+//       height: inherit;
+//     }
+//   }
+// }

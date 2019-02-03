@@ -1,11 +1,7 @@
 @import './variables.scss';
 
 .container {
+  min-height: 100%;
   display: grid;
-  grid-template-rows: 35px auto 50px;
-  grid-template-areas:
-    'header'
-    'content'
-    'footer';
-  height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }

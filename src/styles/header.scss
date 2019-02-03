@@ -1,27 +1,27 @@
-@import './variables.scss';
+// @import './variables.scss';
 
-.header {
-  display: grid;
-  grid-area: header;
-  background-color: $primary-color;
-  grid-template-areas: 'left right';
-  padding: 0px 8px;
+// .header {
+//   // display: grid;
+//   grid-area: header;
+//   background-color: $primary-color;
+//   grid-template-areas: 'left right';
+//   padding: 0px 8px;
 
-  .left {
-    grid-area: left;
-    align-self: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
+//   .left {
+//     grid-area: left;
+//     align-self: center;
+//     font-family: 'Roboto Condensed', sans-serif;
+//     text-transform: uppercase;
 
-    a {
-      color: $text-icons;
-      text-decoration: none;
-    }
-  }
+//     a {
+//       color: $text-icons;
+//       text-decoration: none;
+//     }
+//   }
 
-  .right {
-    grid-area: right;
-    align-self: center;
-    justify-self: end;
-  }
-}
+//   .right {
+//     grid-area: right;
+//     align-self: center;
+//     justify-self: end;
+//   }
+// }
