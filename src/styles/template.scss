@@ -2,8 +2,7 @@
 
 .template {
   display: grid;
-  background-color: $secondary-text;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 5% 90% 5%;
   grid-template-rows: 100px auto auto;
   grid-template-areas:
     '. title .'
@@ -22,6 +21,7 @@
     font-weight: 300;
     font-size: 1.25em;
     line-height: 1.5em;
+    padding: 0.5em;
     border: 2px solid $divider-color;
     background-color: transparent;
     align-self: start;
