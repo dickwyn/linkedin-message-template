@@ -10,8 +10,8 @@ class Template extends Component {
     signature: true,
   };
 
-  onChange = () => {
-    this.setState({});
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {
@@ -29,41 +29,43 @@ class Template extends Component {
           to get some pointers when applying for a role at {company}. Go Devils!
         </div>
         <div className="form">
+          <div className="label">Template</div>
           <div className="template-select">
-            <label className="form-label">Template</label>
-            <div className="col-sm-10" id="templateName">
-              <select className="form-control">
-                <option>Default Template</option>
-              </select>
-            </div>
+            <select className="form-control">
+              <option>Default Template</option>
+            </select>
           </div>
+          <div className="label">Name</div>
           <div className="name">
-            <label className="form-label">Name</label>
             <input
               type="text"
               className="form-control"
-              id="personName"
               placeholder="John"
+              name="name"
+              onChange={this.handleChange}
             />
           </div>
+          <div className="label">Company</div>
           <div className="company">
-            <label className="form-label">Company</label>
             <input
               type="text"
               className="form-control"
-              id="companyName"
               placeholder="Google"
+              name="company"
+              onChange={this.handleChange}
             />
           </div>
+          <div className="label">Job</div>
           <div className="job">
-            <label className="form-label">Job</label>
             <input
               type="text"
               className="form-control"
-              id="jobName"
               placeholder="Full Stack developer roles"
+              name="job"
+              onChange={this.handleChange}
             />
           </div>
+          <div className="label">Signature</div>
           <div className="signature">
             <input
               className="form-check-input"
@@ -71,8 +73,8 @@ class Template extends Component {
               id="signatureName"
               checked
             />
-            <label className="form-check-label">Signature</label>
           </div>
+          <div className="label" />
           <div className="copy-button">
             <button
               type="button"
