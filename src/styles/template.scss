@@ -2,13 +2,17 @@
 
 .template {
   display: grid;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: 100px auto auto;
   grid-template-areas:
     '. title .'
     '. message .'
     '. form .';
   grid-row-gap: 25px;
+
+  @media only screen and (max-width: 880px) {
+    grid-template-columns: 5% 90% 5%;
+  }
 
   .title {
     grid-area: title;
