@@ -1,12 +1,11 @@
-// @import './variables.scss';
+@import './variables.scss';
 
-// .footer {
-//   // display: grid;
-//   grid-area: footer;
-//   background-color: $primary-color;
+.footer {
+  display: grid;
+  background-color: $primary-color;
 
-//   .text {
-//     justify-self: center;
-//     align-self: center;
-//   }
-// }
+  .text {
+    justify-self: center;
+    align-self: center;
+  }
+}
