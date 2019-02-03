@@ -23,10 +23,8 @@ class Template extends Component {
           <h1>{template} template</h1>
         </div>
         <div className="message">
-          {`Hi ${name},I came across your profile through the alumni search.
-          I will be graduating ASU this December with a CS degree. I'm looking
-          to apply for ${job} within ${company}. I would like to have a chat with
-          you to get some pointers when applying for a role at ${company}.<br />
+          {`Hi ${name},\n
+          I came across your profile through the alumni search. I will be graduating ASU this December with a CS degree. I'm looking to apply for ${job} within ${company}. I would like to have a chat with you to get some pointers when applying for a role at ${company}.\n
           Go Devils!`}
         </div>
         <div className="form">
