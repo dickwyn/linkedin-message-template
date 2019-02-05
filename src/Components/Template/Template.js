@@ -9,7 +9,6 @@ class Template extends Component {
     company: 'testorange',
     job: 'full stack developer roles',
     signature: true,
-    copied: 'Copied',
   };
 
   componentDidMount() {
@@ -68,7 +67,7 @@ class Template extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <div className="label">Signature</div>
+          {/* <div className="label">Signature</div>
           <div className="signature">
             <input
               className="form-check-input"
@@ -76,9 +75,13 @@ class Template extends Component {
               id="signatureName"
               checked
             />
-          </div>
+          </div> */}
           <div className="copy-button">
-            <button type="button" data-clipboard-target=".message">
+            <button
+              type="button"
+              className="btn"
+              data-clipboard-target=".message"
+            >
               Copy Text
             </button>
           </div>
