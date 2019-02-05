@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+.header {
+  display: grid;
+  grid-template-areas: 'left right';
+  padding: 0px 8px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+
+  a {
+    color: $primary-text;
+    text-decoration: none;
+  }
+
+  a:link {
+    // color: #ff0000;
+  }
+
+  a:visited {
+    // color: #00ff00;
+  }
+
+  a:hover {
+    font-weight: 700;
+    border-bottom: 1px dotted $primary-text;
+  }
+
+  a:active {
+    color: #0000ff;
+  }
+
+  .left {
+    grid-area: left;
+    align-self: center;
+  }
+
+  .right {
+    grid-area: right;
+    align-self: center;
+    justify-self: end;
+
+    a {
+      display: inline-block;
+      margin: 0px 5px;
+    }
+  }
+}
