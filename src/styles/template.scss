@@ -41,38 +41,45 @@
     grid-template-columns: 120px auto;
     grid-row-gap: 15px;
     align-self: start;
+    margin-bottom: 1em;
+
+    .label {
+      align-self: center;
+    }
 
     select.form-control,
     .form-control {
+      padding-left: 5px;
       border-radius: 5px;
       border: 1px solid $divider-color;
       font-size: 1.15em;
       width: -webkit-fill-available;
-      height: 25px;
-    }
+      height: 35px;
 
-    select.form-control {
-      height: inherit;
+      &:focus {
+        border: 1px solid $accent-color;
+        box-shadow: none;
+        outline: 0 none;
+      }
     }
 
     .copy-button {
       grid-column: span 2;
-      button {
+      button.btn {
         font-size: 1em;
         color: $accent-color;
+        background-color: $text-icons;
         border: 1px solid $accent-color;
         border-radius: 3px;
-        height: 38px;
+        height: 35px;
         width: -webkit-fill-available;
 
         &:hover {
-          border: none;
           color: $text-icons;
           background-color: $accent-color;
-        }
-
-        &:active {
-          background-color: blue;
+          box-shadow: none;
+          outline: 0 none;
+          border: none;
         }
       }
     }
