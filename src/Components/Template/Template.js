@@ -18,21 +18,18 @@ class Template extends Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
-    console.log(e.target.value);
   };
 
   render() {
-    const { template, name, company, job, signature, copied } = this.state;
+    const { template, name, company, job } = this.state;
 
     return (
       <div className="template">
         <div className="title">
           <h1>{template} template</h1>
         </div>
-        <div className="message" onChange="handleChange">
-          {`Hi ${name},\n
-          I came across your profile through the alumni search. I will be graduating ASU this December with a CS degree. I'm looking to apply for ${job} within ${company}. I would like to have a chat with you to get some pointers when applying for a role at ${company}.\n
-          Go Devils!`}
+        <div className="message">
+          {`Hi ${name},\n\nI came across your profile through the alumni search. I will be graduating ASU this December with a CS degree. I'm looking to apply for ${job} within ${company}. I would like to have a chat with you to get some pointers when applying for a role at ${company}.\n\nGo Devils!`}
         </div>
         <div className="form">
           <div className="label">Template</div>
@@ -80,14 +77,8 @@ class Template extends Component {
               checked
             />
           </div>
-          <div className="label" />
           <div className="copy-button">
-            <button
-              type="button"
-              className="btn"
-              ref="button"
-              data-clipboard-text={copied}
-            >
+            <button type="button" data-clipboard-target=".message">
               Copy Text
             </button>
           </div>
