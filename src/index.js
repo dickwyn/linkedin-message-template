@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 import './styles/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+ReactGA.initialize('UA-64177134-1', {
+  gaOptions: {
+    debug: true,
+    siteSpeedSampleRate: 100,
+  },
+});
+
+ReactGA.ga('send', 'pageview', '/');
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
