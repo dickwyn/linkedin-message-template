@@ -5,12 +5,7 @@ import './styles/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactGA.initialize('UA-64177134-1', {
-  gaOptions: {
-    debug: true,
-    siteSpeedSampleRate: 100,
-  },
-});
+ReactGA.initialize('UA-64177134-1');
 
 ReactGA.ga('send', 'pageview', '/');
 
