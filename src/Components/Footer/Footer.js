@@ -7,7 +7,7 @@ class Footer extends Component {
 
     return (
       <div className="footer">
-        <div className="text">© {year} testorange - message template v0.2</div>
+        <div className="text">© {year} testoranges - message template v0.2</div>
       </div>
     );
   }
