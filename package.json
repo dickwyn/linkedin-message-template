@@ -5,7 +5,7 @@
   "homepage": "https://template.dickwyn.xyz",
   "dependencies": {
     "clipboard": "^2.0.4",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
